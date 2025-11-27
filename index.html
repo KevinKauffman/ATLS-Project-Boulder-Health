@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Boulder Valley Health Center | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- CHANGE 1: Skip link added to support keyboard users -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <!-- Alert/banner -->
+    <div class="top-banner" role="status" aria-live="polite">
+      <p>
+        Abortion is legal in Colorado. All are welcome here.
+        Appointments are available within a week.
+      </p>
+    </div>
+
+    <div class="header-bar">
+      <!-- CHANGE 2: Logo has descriptive alt, link goes to home -->
+      <a href="index.html" class="logo">
+        <img src="img/bvh-logo.png"
+             alt="Boulder Valley Health Center home">
+      </a>
+
+      <!-- CHANGE 3: Navigation structured as <nav> with list and proper labels -->
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li class="has-submenu">
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-abortion">
+              Abortion
+            </button>
+            <ul id="nav-abortion" class="submenu">
+              <li><a href="abortion-overview.html">Abortion Overview</a></li>
+              <li><a href="#">Medication Abortion</a></li>
+              <li><a href="#">Procedure Abortion</a></li>
+              <li><a href="#">Out-of-State Patients</a></li>
+              <li><a href="#">Abortion When Under Age 18</a></li>
+              <li><a href="#">Cost &amp; Financial Support</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-health">
+              Health Services
+            </button>
+            <ul id="nav-health" class="submenu">
+              <li><a href="#">Birth Control</a></li>
+              <li><a href="#">Infection Testing &amp; Prevention</a></li>
+              <li><a href="#">Gender-Affirming Care</a></li>
+              <li><a href="#">Wellness Exams</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-patients">
+              Patients
+            </button>
+            <ul id="nav-patients" class="submenu">
+              <li><a href="#">Schedule</a></li>
+              <li><a href="#">Patient Portal</a></li>
+              <li><a href="#">Cost &amp; Insurance</a></li>
+              <li><a href="#">Prepare For Your Appointment</a></li>
+              <li><a href="#">Forms &amp; Resources</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Teen Clinic</a></li>
+          <li><a href="#">Get Involved</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-secondary" href="#" aria-label="Open patient portal">
+          Patient Portal
+        </a>
+        <a class="btn btn-primary" href="#" aria-label="Make a donation to Boulder Valley Health Center">
+          Donate
+        </a>
+        <a class="btn btn-outline" href="tel:+13034425160">
+          (303) 442-5160
+        </a>
+      </div>
+    </div>
+
+    <section class="hero" aria-labelledby="home-hero-title">
+      <div class="hero-text">
+        <p class="hero-kicker">high-quality, affordable, and compassionate health care</p>
+        <h1 id="home-hero-title">
+          Your Community Reproductive and Sexual Health Clinic
+        </h1>
+        <p>
+          Boulder Valley Health Center provides person-centered reproductive and sexual
+          health care based on best practices. Our core values are care, compassion, and community.
+        </p>
+        <a class="btn btn-primary" href="#" aria-label="Schedule an appointment now">
+          Schedule Now
+        </a>
+        <p class="hero-phone">
+          Or call <a href="tel:+13034425160">(303) 442-5160</a>
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="img/hero-home.jpg"
+             alt="Clinic staff and patients smiling together">
+      </div>
+    </section>
+  </header>
+
+  <main id="main-content">
+    <!-- Services cards -->
+    <section aria-labelledby="services-heading" class="section">
+      <h2 id="services-heading">Our Services</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Abortion Care</h3>
+          <p>Medication and procedural abortion care up to 16 weeks of pregnancy.</p>
+          <a class="card-link" href="abortion-overview.html">Learn about abortion services</a>
+        </article>
+
+        <article class="card">
+          <h3>Gyn Care</h3>
+          <p>Preventive reproductive and sexual health care and treatment for gynecologic concerns.</p>
+          <a class="card-link" href="#">Explore Gyn care</a>
+        </article>
+
+        <article class="card">
+          <h3>Gender-Affirming Care</h3>
+          <p>Gender affirming care including hormonal therapy and ongoing support.</p>
+          <a class="card-link" href="#">Learn about gender-affirming care</a>
+        </article>
+
+        <article class="card">
+          <h3>Birth Control &amp; Infection Testing</h3>
+          <p>Birth control counseling plus confidential STI testing and prevention services.</p>
+          <a class="card-link" href="#">See birth control &amp; STI services</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- What / Who / Why -->
+    <section aria-labelledby="about-heading" class="section section-alt">
+      <div class="three-column">
+        <article>
+          <h2 id="about-heading">What We Do</h2>
+          <p>
+            We provide accessible and equitable reproductive and sexual health care,
+            counseling, and information for people of all gender identities.
+          </p>
+        </article>
+        <article>
+          <h2>Who We Serve</h2>
+          <p>
+            We serve patients of all ages, incomes, and insurance statuses, including
+            many under age 25 and teens seeking confidential care.
+          </p>
+        </article>
+        <article>
+          <h2>Why It Matters</h2>
+          <p>
+            We believe high-quality, affordable, compassionate health care is a basic human right.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Donations -->
+    <section aria-labelledby="donate-heading" class="section">
+      <div class="two-column">
+        <div>
+          <h2 id="donate-heading">Support Safe, Accessible Reproductive Healthcare</h2>
+          <p>
+            Donor support helps us bridge gaps in reimbursement and provide services for
+            uninsured and underinsured patients, and funds education programs for youth.
+          </p>
+          <a class="btn btn-primary" href="#" aria-label="Make a donation today">
+            Make a Donation
+          </a>
+        </div>
+        <div>
+          <img src="img/group-photo.jpg"
+               alt="Group of people standing together outside the clinic">
+        </div>
+      </div>
+    </section>
+
+    <!-- Patient reviews -->
+    <section aria-labelledby="reviews-heading" class="section section-alt">
+      <h2 id="reviews-heading">Patient Reviews</h2>
+      <p class="reviews-summary" aria-label="Average rating based on Google reviews">
+        Boulder Valley Health Center — 290 Google reviews
+      </p>
+
+      <div class="card-grid reviews-grid">
+        <article class="card" aria-label="Review from Aimee Herman">
+          <h3 class="review-name">Aimee Herman</h3>
+          <p class="review-date">October 21, 2025</p>
+          <p>
+            “It's refreshing to go to a clinic that respects names and pronouns,
+            is sex-positive, and knowledgeable about different bodies and identities.”
+          </p>
+        </article>
+
+        <article class="card" aria-label="Review from SDM">
+          <h3 class="review-name">SDM</h3>
+          <p class="review-date">October 11, 2025</p>
+          <p>
+            “Not sure anyone has ever been so kind to me. They listened and addressed
+            all of my concerns. I am so grateful.”
+          </p>
+        </article>
+
+        <article class="card" aria-label="Review from Kiri Booth">
+          <h3 class="review-name">Kiri Booth</h3>
+          <p class="review-date">September 19, 2025</p>
+          <p>
+            “They are always kind and respectful, offer high-quality care, and work
+            hard to make services accessible to everyone.”
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Teen resources -->
+    <section aria-labelledby="teen-heading" class="section">
+      <h2 id="teen-heading">Resources &amp; Services for Teens</h2>
+      <!-- CHANGE 4: Replaced vague 'Click here' with descriptive link text -->
+      <p>
+        Learn about our confidential Teen Clinic services, including free or low-cost
+        birth control and STI testing for young people under 18.
+      </p>
+      <p>
+        <a class="btn btn-secondary" href="#" aria-label="Go to Teen Clinic information pages">
+          Go to Teen Clinic pages
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <section class="footer-top">
+      <div class="footer-column">
+        <h2 class="footer-heading">Service Areas</h2>
+        <ul>
+          <li><a href="#">Colorado</a></li>
+          <li><a href="#">Nebraska</a></li>
+          <li><a href="#">Oklahoma</a></li>
+          <li><a href="#">South Dakota</a></li>
+          <li><a href="#">Texas</a></li>
+          <li><a href="#">Wyoming</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h2 class="footer-heading">Contact Us</h2>
+        <p><a href="tel:+13034425160">(303) 442-5160</a></p>
+        <p>
+          <a href="https://maps.google.com/?q=2855+Valmont+Road+Boulder+CO+80301">
+            2855 Valmont Road, Boulder, CO 80301
+          </a>
+        </p>
+
+        <!-- CHANGE 5: Social icons have accessible names, not just icons -->
+        <ul class="social-links">
+          <li><a href="#" aria-label="Visit Boulder Valley Health Center on Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="Visit Boulder Valley Health Center on Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Visit Boulder Valley Health Center on X (Twitter)">X (Twitter)</a></li>
+          <li><a href="#" aria-label="Visit Boulder Valley Health Center on YouTube">YouTube</a></li>
+          <li><a href="#" aria-label="Visit Boulder Valley Health Center on LinkedIn">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h2 class="footer-heading">Info</h2>
+        <ul>
+          <li><a href="abortion-overview.html">Abortion Care</a></li>
+          <li><a href="#">Gyn Care</a></li>
+          <li><a href="#">Wellness Exams</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Employment</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h2 class="footer-heading">Hours</h2>
+        <p>Mon–Fri: 8:00 a.m. – 5:00 p.m.*</p>
+        <p>Sat: 8:30 a.m. – 1:00 p.m.</p>
+        <p>Sun: Closed</p>
+        <p class="fine-print">
+          *3rd Wednesday of each month, closed from 8:00 a.m. – 1:00 p.m. for staff meetings.
+        </p>
+      </div>
+    </section>
+
+    <section class="footer-bottom">
+      <p>
+        ©2025 Boulder Valley Health Center. This organization is a platinum-level Guidestar participant,
+        demonstrating a commitment to transparency.
+      </p>
+      <p class="footer-meta">
+        Website &amp; SEO by Partners For Choice.
+      </p>
+    </section>
+  </footer>
+
+  <!-- CHANGE 6: Focus styles & nav toggles will be handled in CSS/JS with accessible patterns -->
+
+</body>
+</html>
