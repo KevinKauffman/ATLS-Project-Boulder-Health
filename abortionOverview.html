@@ -6,230 +6,225 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <!-- Reuse same header as index.html by copy/paste or via server-side include if you want.
-       For class purposes, a direct copy into this file is fine. -->
-  <header class="site-header">
-    <div class="top-banner" role="status" aria-live="polite">
-      <p>
-        Abortion is legal in Colorado. All are welcome here.
-        Appointments are available within a week.
-      </p>
-    </div>
-    <div class="header-bar">
-      <a href="index.html" class="logo">
-        <img src="img/bvh-logo.png"
-             alt="Boulder Valley Health Center home">
-      </a>
-      <nav class="main-nav" aria-label="Primary">
-        <ul>
-          <li class="has-submenu">
-            <button class="nav-toggle" aria-expanded="true" aria-controls="nav-abortion">
-              Abortion
-            </button>
-            <ul id="nav-abortion" class="submenu">
-              <li><a aria-current="page" href="abortion-overview.html">Abortion Overview</a></li>
-              <li><a href="#">Medication Abortion</a></li>
-              <li><a href="#">Procedure Abortion</a></li>
-              <li><a href="#">Out-of-State Patients</a></li>
-              <li><a href="#">Abortion When Under Age 18</a></li>
-              <li><a href="#">Cost &amp; Financial Support</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Health Services</a></li>
-          <li><a href="#">Patients</a></li>
-          <li><a href="#">Teen Clinic</a></li>
-          <li><a href="#">Get Involved</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+<!-- FIX: Skip link added -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
-      <div class="header-actions">
-        <a class="btn btn-secondary" href="#" aria-label="Open patient portal">
-          Patient Portal
-        </a>
-        <a class="btn btn-primary" href="#">
-          Donate
-        </a>
-        <a class="btn btn-outline" href="tel:+13034425160">
-          (303) 442-5160
-        </a>
-      </div>
-    </div>
-  </header>
+<header class="site-header">
 
-  <main id="main-content">
-    <section class="hero hero-inner" aria-labelledby="abortion-hero-title">
-      <div class="hero-text">
-        <h1 id="abortion-hero-title">Abortion Services Overview</h1>
-        <p class="hero-kicker">
-          Abortion appointments are typically available within one week.
-        </p>
-        <p>
-          At Boulder Valley Health Center, we stand firmly in support of abortion rights
-          and the right to choose, including for patients under 18.
-        </p>
-        <p>
-          Call us at <a href="tel:+13034425160">303-442-5160</a> to schedule an abortion appointment.
-          Abortion appointments cannot be booked using our online scheduling tool.
-        </p>
-      </div>
-      <div class="hero-image">
-        <img src="img/hero-abortion.jpg"
-             alt="Healthcare provider talking with a patient in a clinic room">
-      </div>
-    </section>
+  <div class="top-banner" role="status" aria-live="polite">
+    Abortion is legal in Colorado. All are welcome here. Appointments are available within a week.
+  </div>
 
-    <section aria-labelledby="support-heading" class="section">
-      <h2 id="support-heading">Patient-Centered Abortion Care</h2>
-      <p>
-        Our clinic offers safe, respectful, and patient-centered abortion services for
-        people of many ages, genders, and backgrounds.
-      </p>
-      <ul class="key-points">
-        <li>
-          <strong>Confidential care:</strong> We prioritize your privacy and provide a non-judgmental environment.
-        </li>
-        <li>
-          <strong>Understand your options:</strong> Learn about medication and procedural abortion options
-          and what to expect.
-        </li>
-        <li>
-          <strong>Know your rights:</strong> We can help you understand the legal protections for abortion access,
-          including for minors.
-        </li>
-        <li>
-          <strong>Financial support:</strong> Our team can help answer questions about costs, insurance,
-          and financial assistance, including travel support.
-        </li>
-        <li>
-          <strong>Dedicated support team:</strong> You are not alone; our staff will guide you through each step.
-        </li>
+  <div class="header-bar">
+
+    <!-- FIX: Alt text for logo -->
+    <a href="index.html" class="logo">
+      <img src="https://bouldervalleyhealth.org/wp-content/uploads/2024/06/cropped-BVHC-LOGO.png"
+           alt="Boulder Valley Health Center home">
+    </a>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a aria-current="page" href="abortionOverview.html">Abortion</a></li>
+        <li><a href="#">Health Services</a></li>
+        <li><a href="#">Patients</a></li>
+        <li><a href="#">Teen Clinic</a></li>
+        <li><a href="#">Get Involved</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
-    </section>
+    </nav>
 
-    <section aria-labelledby="services-heading" class="section section-alt">
-      <h2 id="services-heading">Abortion Services We Offer</h2>
+    <div class="header-actions">
+      <a class="btn btn-secondary" href="#">Patient Portal</a>
+      <a class="btn btn-primary" href="#">Donate</a>
+      <a class="btn btn-outline" href="tel:+13034425160">(303) 442-5160</a>
+    </div>
+  </div>
+</header>
 
-      <div class="card-grid">
-        <article class="card">
-          <h3>Medication Abortion (Abortion Pill)</h3>
-          <p>
-            A safe and effective option to end a pregnancy up to 11 weeks, using medications
-            taken at home under medical guidance.
-          </p>
-          <a class="card-link" href="#">Learn about medication abortion</a>
-        </article>
+<section class="hero hero-abortion">
 
-        <article class="card">
-          <h3>Procedure (Surgical) Abortion</h3>
-          <p>
-            A quick in-clinic procedure provided for patients up to 16 weeks and 0 days pregnant.
-          </p>
-          <a class="card-link" href="#">Learn about procedure abortion</a>
-        </article>
+  <!-- FIX: Alt text for hero icon -->
+  <div class="hero-abortion-icon">
+    <img src="https://bouldervalleyhealth.org/wp-content/uploads/2023/11/abortion-icon.png"
+         alt="Abortion services icon">
+  </div>
 
-        <article class="card">
-          <h3>Patients Traveling from Out of State</h3>
-          <p>
-            Everyone has the right to obtain an abortion in Colorado, regardless of where they live.
-          </p>
-          <a class="card-link" href="#">Information for out-of-state patients</a>
-        </article>
 
-        <article class="card">
-          <h3>Abortion for Patients Under 18</h3>
-          <p>
-            We support the right of young people to access abortion care and can help you understand your options.
-          </p>
-          <a class="card-link" href="#">Learn about abortion when under 18</a>
-        </article>
+  <h1>Abortion Services Overview</h1>
 
-        <article class="card">
-          <h3>Costs and Financial Support</h3>
-          <p>
-            Learn about pricing, insurance, sliding scale options, and available financial assistance.
-          </p>
-          <a class="card-link" href="#">See cost and financial support options</a>
-        </article>
-      </div>
-    </section>
+  <p class="hero-subtitle">Abortion appointments available within 1 week.</p>
+  <p class="hero-subtitle">
+    <strong>Call us at 303-442-5160 to schedule an abortion. Abortion appointments cannot be scheduled online.</strong>
+  </p>
+</section>
 
-    <!-- Pregnancy calculator intro -->
-    <section aria-labelledby="pregnancy-heading" class="section">
-      <!-- CHANGE A: Fixed heading structure so only one H1 on page, this is H2 -->
-      <h2 id="pregnancy-heading">Pregnancy Calculator</h2>
-      <p>
-        Use the calculator below to estimate how many weeks pregnant you might be by
-        entering the first day of your last menstrual period.
-      </p>
-      <p class="fine-print">
-        The gestational age of your pregnancy will be determined by an ultrasound on
-        the day of your visit. Only a trained medical professional can accurately
-        determine how far along you are and which options are available to you.
-      </p>
+<main id="main-content">
 
-      <!-- For the class, you can implement this as a simple form; it doesn’t have to
-           actually compute dates unless you want to. -->
-      <form class="calculator-form" aria-describedby="pregnancy-help">
-        <label for="last-period-date">First day of your last period</label>
-        <input id="last-period-date" name="last-period-date" type="date" required>
-        <button type="submit" class="btn btn-primary">
-          Estimate pregnancy length
-        </button>
-        <p id="pregnancy-help" class="fine-print">
-          This tool is for informational purposes only and does not replace medical advice.
+  <!-- Overview / Support -->
+  <section class="section">
+    <h2>Patient-Centered Abortion Care</h2>
+    <p>
+      At Boulder Valley Health Center, we stand firmly in support of abortion rights and the right to choose,
+      including for individuals under 18. Our clinic offers safe, respectful abortion services for people of
+      many ages, genders, and backgrounds.
+    </p>
+
+    <ul class="key-points">
+      <li><strong>Confidential Care:</strong> Your privacy is our priority. We provide a safe, non-judgmental space.</li>
+      <li><strong>Understand Your Options:</strong> Learn about medication and procedure abortions and what to expect.</li>
+      <li><strong>Know Your Rights:</strong> Get information about legal protections and your right to travel for care.</li>
+      <li><strong>Financial Support:</strong> We help answer questions about cost, insurance, and possible funding help.</li>
+    </ul>
+  </section>
+
+  <!-- Services Offered -->
+  <section class="section section-alt">
+    <h2>Abortion Services We Offer</h2>
+
+    <div class="card-grid">
+      <article class="card">
+        <h3>Medication Abortion (Abortion Pill)</h3>
+        <p>
+          A safe and effective option using medications to end a pregnancy in the first 11 weeks,
+          with support from our clinical team.
         </p>
-      </form>
-    </section>
+        <a href="#" class="card-link">Learn more</a>
+      </article>
 
-    <!-- Reassurance / values -->
-    <section aria-labelledby="values-heading" class="section section-alt">
-      <h2 id="values-heading">We Believe in and Support Reproductive Freedom</h2>
-      <p>
-        Our team provides supportive, respectful, and caring health care that is
-        high-quality and affordable. We are committed to removing barriers to abortion
-        care and making sure you feel informed and supported.
-      </p>
-      <a class="btn btn-primary" href="tel:+13034425160">
-        Call 303-442-5160 to speak with our team
-      </a>
-    </section>
+      <article class="card">
+        <h3>Procedure (Surgical) Abortion</h3>
+        <p>
+          An in-clinic procedure provided up to 16 weeks and 0 days of pregnancy,
+          performed by experienced clinicians.
+        </p>
+        <a href="#" class="card-link">Learn more</a>
+      </article>
 
-    <!-- CTA repeated similar to home -->
-    <section aria-labelledby="schedule-cta-heading" class="section">
-      <h2 id="schedule-cta-heading">Ready to Talk About Your Options?</h2>
-      <p>
-        Abortion appointments are scheduled by phone so that our staff can make sure
-        you get the type of visit that best meets your needs.
-      </p>
-      <p>
-        Call <a href="tel:+13034425160">303-442-5160</a> or use our online scheduling tool
-        for other reproductive and sexual health services.
-      </p>
-      <a class="btn btn-secondary" href="#">
-        Schedule other services online
-      </a>
-    </section>
-  </main>
+      <article class="card">
+        <h3>Patients Traveling from Out of State</h3>
+        <p>
+          We welcome patients from across the country. Our staff can help you understand logistics,
+          timing, and options for support.
+        </p>
+        <a href="#" class="card-link">Information for out-of-state patients</a>
+      </article>
 
-  <!-- Reuse the same footer as index.html -->
-  <footer class="site-footer">
-    <!-- You can paste the same footer markup here to keep the structure identical -->
-    <section class="footer-top">
-      <!-- ...footer columns as in index.html... -->
-    </section>
-    <section class="footer-bottom">
+      <article class="card">
+        <h3>Abortion for Patients Under 18</h3>
+        <p>
+          We support young people in accessing abortion care and understanding their rights,
+          including those living in restrictive states.
+        </p>
+        <a href="#" class="card-link">Learn more about abortion when under 18</a>
+      </article>
+
+      <article class="card">
+        <h3>Costs and Financial Support</h3>
+        <p>
+          Learn about pricing, insurance, sliding-scale fees, and financial assistance programs,
+          including funds that may help with travel costs.
+        </p>
+        <a href="#" class="card-link">Cost and financial support</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Pregnancy Calculator -->
+  <section class="section">
+    <h2>Pregnancy Calculator</h2>
+
+    <!-- FIX: Missing form label repaired -->
+    <form class="calculator-form">
+      <label for="last-period-date">First day of your last period</label>
+      <input id="last-period-date" name="last-period-date" type="date" required>
+      <button type="submit" class="btn btn-primary">Estimate pregnancy length</button>
+    </form>
+
+    <p class="fine-print">
+      This tool offers an estimate only. Gestational age will be confirmed by ultrasound during your visit.
+    </p>
+  </section>
+
+  <!-- Values / Beliefs -->
+  <section class="section section-alt">
+    <h2>We Believe in and Support Reproductive Freedom</h2>
+    <p>
+      We believe everyone has the right to make decisions about their own body and life.
+      Our team is committed to removing barriers to abortion care and providing respectful,
+      affirming services for all patients.
+    </p>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="section">
+    <h2>Ready to Talk About Your Options?</h2>
+    <p>
+      Abortion appointments are scheduled by phone so our staff can make sure
+      you get the type of visit that best meets your needs.
+    </p>
+    <p>
+      Call <a href="tel:+13034425160">303-442-5160</a> to schedule an appointment.
+      You can use our online scheduling tool to book other reproductive and sexual health services.
+    </p>
+
+
+    <a class="btn btn-secondary" href="#">Schedule other services online</a>
+  </section>
+
+  <!-- Additional resources / PDFs -->
+  <section class="section section-alt">
+    <h2>Additional Resources</h2>
+    <p>
+      Learn more about abortion access, your rights, and organizations that can help with logistics and costs.
+    </p>
+
+    <ul>
+      <li><a href="#">Abortion Rights &amp; Access Guide</a></li>
+      <li><a href="#">Travel Support Resource List</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <section class="footer-top">
+    <div class="footer-column">
+      <h2 class="footer-heading">Contact</h2>
+      <p><a href="tel:+13034425160">(303) 442-5160</a></p>
       <p>
-        ©2025 Boulder Valley Health Center. This organization is a platinum-level Guidestar participant,
-        demonstrating a commitment to transparency.
+        <a href="https://maps.google.com/?q=2855+Valmont+Road+Boulder+CO+80301">
+          2855 Valmont Road, Boulder, CO 80301
+        </a>
       </p>
-      <p class="footer-meta">
-        Website &amp; SEO by Partners For Choice.
-      </p>
-    </section>
-  </footer>
+    </div>
+
+    <div class="footer-column">
+      <h2 class="footer-heading">Resources</h2>
+      <ul>
+        <li><a href="#">Abortion Aftercare Instructions</a></li>
+        <li><a href="#">Medication Abortion Information Sheet</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h2 class="footer-heading">Stay Connected</h2>
+      <ul class="social-links">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">X</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="footer-bottom">
+    <p>©2025 Boulder Valley Health Center. All rights reserved.</p>
+  </section>
+</footer>
+
 </body>
 </html>
